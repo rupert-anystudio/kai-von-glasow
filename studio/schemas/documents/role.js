@@ -1,10 +1,10 @@
-import { BiPurchaseTag } from 'react-icons/bi'
+import { BiBadge } from 'react-icons/bi'
 
 export default {
   name: 'role',
   title: 'Role',
   type: 'document',
-  icon: BiPurchaseTag,
+  icon: BiBadge,
   fields: [
     {
       type: 'string',
