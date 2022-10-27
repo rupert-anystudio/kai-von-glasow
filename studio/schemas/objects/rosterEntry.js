@@ -19,7 +19,13 @@ export default {
         {
           type: 'reference',
           name: 'bearer',
-          to: [{ type: 'artist' }, { type: 'person' }],
+          to: [
+            { type: 'artist' },
+            { type: 'person' },
+            { type: 'productionHouse' },
+            { type: 'agency' },
+            { type: 'company' },
+          ],
         },
       ],
       validation: (Rule) => Rule.required(),
