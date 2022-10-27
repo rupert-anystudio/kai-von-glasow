@@ -7,6 +7,13 @@ export default {
   icon: BiUserVoice,
   fields: [
     {
+      type: 'string',
+      name: 'name',
+      title: 'Name',
+      validation: (Rule) => Rule.required(),
+      description: 'The name of this artist',
+    },
+    {
       type: 'reference',
       name: 'person',
       title: 'Person',
@@ -27,7 +34,7 @@ export default {
   ],
   preview: {
     select: {
-      title: 'person.name',
+      title: 'name',
       subtitle: 'website.url',
     },
   },
