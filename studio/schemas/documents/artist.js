@@ -12,14 +12,17 @@ export default {
       title: 'Person',
       to: [{ type: 'person' }],
       validation: (Rule) => Rule.required(),
+      description: 'The person behind this artist',
     },
     {
       type: 'website',
       name: 'website',
+      description: 'The website of this artist',
     },
     {
       type: 'socialMediaProfiles',
       name: 'socialMediaProfiles',
+      description: 'A list of social media profiles of this artist',
     },
   ],
   preview: {

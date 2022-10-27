@@ -11,14 +11,17 @@ export default {
       name: 'name',
       title: 'Name',
       validation: (Rule) => Rule.required(),
+      description: 'The name of this agency',
     },
     {
       type: 'website',
       name: 'website',
+      description: 'The website of this agency',
     },
     {
       type: 'socialMediaProfiles',
       name: 'socialMediaProfiles',
+      description: 'A list of social media profiles of this agency',
     },
   ],
   preview: {

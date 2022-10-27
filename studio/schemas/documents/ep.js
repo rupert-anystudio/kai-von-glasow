@@ -11,6 +11,7 @@ export default {
       name: 'name',
       title: 'Name',
       validation: (Rule) => Rule.required(),
+      description: 'The name of this EP',
     },
     {
       type: 'reference',
@@ -18,11 +19,13 @@ export default {
       title: 'Artist',
       to: [{ type: 'artist' }],
       validation: (Rule) => Rule.required(),
+      description: 'The artist behind this EP',
     },
     {
       type: 'image',
       name: 'cover',
       title: 'Cover image',
+      description: 'The cover art for this EP',
     },
   ],
   preview: {

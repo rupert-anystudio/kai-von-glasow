@@ -12,6 +12,7 @@ export default {
       title: 'Client',
       to: [{ type: 'artist' }, { type: 'label' }],
       validation: (Rule) => Rule.required(),
+      description: 'The client this mastering was made for',
     },
     {
       type: 'reference',
@@ -19,11 +20,13 @@ export default {
       title: 'Release',
       to: [{ type: 'album' }, { type: 'ep' }],
       validation: (Rule) => Rule.required(),
+      description: 'The medium this mastering was made for',
     },
     {
       type: 'date',
       name: 'releaseDate',
       title: 'Release Date',
+      description: 'The date this mastering was released',
     },
   ],
   preview: {

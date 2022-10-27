@@ -7,12 +7,14 @@ export default {
       type: 'string',
       name: 'name',
       title: 'Name',
+      description: 'The displayed name for this audio file',
     },
     {
       type: 'file',
       name: 'file',
       title: 'File',
       validation: (Rule) => Rule.required(),
+      description: 'The audio file itself',
     },
   ],
   preview: {

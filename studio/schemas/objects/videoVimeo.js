@@ -7,6 +7,7 @@ export default {
       type: 'url',
       name: 'url',
       title: 'URL',
+      description: 'The URL pointing to this Vimeo video',
     },
   ],
   preview: {

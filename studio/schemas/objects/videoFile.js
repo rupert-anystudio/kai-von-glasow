@@ -7,12 +7,14 @@ export default {
       type: 'string',
       name: 'name',
       title: 'Name',
+      description: 'The displayed name for this video file',
     },
     {
       type: 'file',
       name: 'file',
       title: 'File',
       validation: (Rule) => Rule.required(),
+      description: 'The video file itself',
     },
   ],
   preview: {

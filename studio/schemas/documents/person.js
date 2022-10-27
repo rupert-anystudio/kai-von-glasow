@@ -11,14 +11,17 @@ export default {
       name: 'name',
       title: 'Name',
       validation: (Rule) => Rule.required(),
+      description: 'The name of this person',
     },
     {
       type: 'website',
       name: 'website',
+      description: 'The website of this person',
     },
     {
       type: 'socialMediaProfiles',
       name: 'socialMediaProfiles',
+      description: 'A list of social media profiles of this person',
     },
   ],
   preview: {
