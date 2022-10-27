@@ -50,6 +50,10 @@ export const defaultItems = [
         title: 'Companies',
       }),
       getDocTypeListItem({
+        type: 'agency',
+        title: 'Agencies',
+      }),
+      getDocTypeListItem({
         type: 'productionHouse',
         title: 'Production Houses',
       }),
